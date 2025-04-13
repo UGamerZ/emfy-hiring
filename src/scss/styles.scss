@@ -1,0 +1,14 @@
+@import "bootstrap/scss/bootstrap";
+
+[id^="row_"]:hover {
+    cursor: pointer;
+    border: 0.2rem solid skyblue;
+}
+[id^="row_"]:active {
+    transition: 0.1s ease-in-out;
+    transform: scale(0.995);
+}
+svg {
+    height: 50px;
+    width: 50px;
+}
