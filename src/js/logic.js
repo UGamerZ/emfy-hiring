@@ -54,7 +54,7 @@ new Promise((resolve) => {
                     }
 
                     //добавляем инфу об основном контакте, если такая существует, отправляем запрос на данные о контакте
-                    if(Data[i]._embedded.contacts.filter((item) => item.is_main == true)[0] != undefined){
+                    if(Data[i]._embedded.contacts.filter((item) => item.is_main === true)[0] !== undefined){
                         totalPromises.push(fetch(`https://thingproxy.freeboard.io/fetch/https://gasterdreemyr.amocrm.ru/api/v4/contacts/${Data[i]
                             ._embedded.contacts[0].id}`,{
                             method: 'GET',
